@@ -951,7 +951,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)  {
 
     #lead {
-        height: auto;
+        height: 100%;
         min-height: auto;
         max-height: auto;
         padding: 80px 15px;
@@ -978,10 +978,12 @@ and (max-device-width : 1024px)  {
 
     }
     #about {
-        text-align: center;
+        display: flex;
+        text-align: left;
 
-        p {
-            text-align: left;
+        h2 {
+            align-content: center;
+            justify-content: center;
         }
     }
 
@@ -1006,7 +1008,7 @@ and (max-device-width : 812px) {
     }
 
     #menu {
-        height: 100%;
+        height: 50%;
         overflow-y: auto;
         box-shadow: none;
         border-radius: 0;
@@ -1112,6 +1114,9 @@ and (max-device-width : 736px) {
         .anim-typewriter {
             animation: none !important;
         }
+    }
+    .profile-pic {
+        display: none;
     }
 
 }
