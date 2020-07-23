@@ -366,6 +366,8 @@ footer {
         font-size: 4em;
         letter-spacing: 0.05em;
         line-height: 1em;
+        white-space: nowrap;
+        overflow: hidden;
     }
 
     h2 {
@@ -374,39 +376,25 @@ footer {
         font-size: 2.25em;
         margin-bottom: 15px;
     }
+  
+    /* Animation */
+    .anim-typewriter {
+        animation:  animated-text 1s steps(20,end) 1s 1 normal both,
+                    animated-cursor 600ms steps(20,end) infinite;
+    }
+
+    /* text animation */
+    @keyframes animated-text{
+        from{width: 0;}
+        to{width: 580px;}
+    }
+
+    /* cursor animations */
+    @keyframes animated-cursor{
+        from{border-right-color: rgba(255,255,255,.75);}
+        to{border-right-color: transparent;}
+    }
 }
-
-  .line-1{
-      position: relative;
-      top: 50%;  
-      width: 20px;
-      border-right: 7px solid rgba(255,255,255,.75);
-      font-size: 100%;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-  }
-
-  
-  /* Animation */
-  .anim-typewriter{
-    animation:  animated-text 1s steps(20,end) 1s 1 normal both,
-                animated-cursor 600ms steps(20,end) infinite;
-  }
-  /* text animation */
-  
-  @keyframes animated-text{
-    from{width: 0;}
-    to{width: 580px;}
-  }
-  
-  /* cursor animations */
-  
-  @keyframes animated-cursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
-  }
-
 
 #lead-overlay {
     position: absolute;
@@ -966,20 +954,25 @@ footer {
     }
 
     #lead-content {
+        animation-play-state: paused;
         position: relative;
         transform: none;
         left: auto;
         top: auto;
 
         h1 {
+            border-right: 0px 
             font-size: 2.75em;
         }
 
         h2 {
             font-size: 1.75em;
         }
-    }
+        .anim-typewriter {
+            animation: none;
+        }
 
+    }
     #about {
         text-align: center;
 
@@ -1020,6 +1013,7 @@ footer {
     }
 
     #lead-content {
+        animation-play-state: paused;
         h1 {
             font-size: 2em;
         }
@@ -1030,6 +1024,9 @@ footer {
 
         a {
             padding: 10px 20px;
+        }
+        .anim-typewriter {
+            animation: none !important;
         }
     }
 
@@ -1089,6 +1086,7 @@ footer {
 @media only screen and (max-width : 480px) {
 
     #lead-content {
+        animation-play-state: paused;
         h1 {
             font-size: 1.5em;
         }
@@ -1100,6 +1098,9 @@ footer {
         a {
             font-size: 0.9em;
             padding: 5px 10px;
+        }
+        .anim-typewriter {
+            animation: none !important;
         }
     }
 
