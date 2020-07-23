@@ -985,6 +985,9 @@ and (max-device-width : 1024px)  {
             align-content: center;
             justify-content: center;
         }
+        .profile-pic {
+            display: none;
+        }
     }
 
 }
@@ -1104,7 +1107,7 @@ and (max-device-width : 736px) {
         }
 
         h2 {
-            font-size: 1em;
+            display: none;
         }
 
         a {
