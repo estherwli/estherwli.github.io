@@ -985,9 +985,10 @@ and (max-device-width : 1024px)  {
             align-content: center;
             justify-content: center;
         }
-        .profile-pic {
-            display: none;
-        }
+
+    }
+    .profile-pic {
+        display: none;
     }
 
 }
@@ -1040,6 +1041,10 @@ and (max-device-width : 812px) {
         .anim-typewriter {
             animation: none !important;
         }
+
+    }
+    .profile-pic {
+        display: none;
     }
 
     #lead-down {
@@ -1107,7 +1112,7 @@ and (max-device-width : 736px) {
         }
 
         h2 {
-            display: none;
+            font-size: 1em;
         }
 
         a {
@@ -1120,6 +1125,11 @@ and (max-device-width : 736px) {
     }
     .profile-pic {
         display: none;
+    }
+    #about {
+        h2 {
+            display: none;
+        }
     }
 
 }
