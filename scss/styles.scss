@@ -963,9 +963,9 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)  {
 
     #lead {
-        height: 150%;
-        min-height: 150%;
-        max-height: auto;
+        height: 100vh;
+        min-height: 500px;
+        max-height: 1080px;
         padding: 80px 15px;
     }
 
@@ -1107,6 +1107,9 @@ and (max-device-width : 812px) {
 
     .social {
         text-align: center;
+    }
+    .about-me {
+        display:none;
     }
 
 }
