@@ -989,10 +989,11 @@ and (max-device-width : 1024px)  {
         max-height: 1080px;
         padding: 80px 15px;
         background-size: 100% auto;
+        display: flex;
+        align-content: center;
     }
 
     #lead-content {
-        padding-top: 80px;
         animation-play-state: paused;
         position: relative;
         transform: none;
