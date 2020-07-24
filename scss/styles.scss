@@ -1117,36 +1117,62 @@ and (max-device-width : 812px) {
         }
     }
 
+    #projects {
+        display: block;
+        align-content: center;
+        text-align: center;
+    }
+
     .project-image {
-        display: none;
+        position: relative;
+        right: 20px;
+        width: 50px;
+        height: auto;
+        opacity: 0.2;
     }
 
     .project-image-right {
-        display: none;
+        position: relative;
+        right: 330px;
+        width: 50px;
+        height: auto;
+        opacity: 0.2;
     }
 
     .project-info-trader {
         position: relative;
+        right: 10px;
         margin: 0;
         padding: 30px 15px;
         top: auto;
         transform: none;
+        p {
+            color: rgb(46, 46, 46);
+        }
     }
 
     .project-info-parallax {
         position: relative;
+        left: 10px;
         margin: 0;
         padding: 30px 15px;
         top: auto;
         transform: none;
+        p {
+            color: rgb(46, 46, 46);
+        }
     }
 
     .project-info-cubesat {
         position: relative;
+        right: 10px;
         margin: 0;
         padding: 30px 15px;
         top: auto;
         transform: none;
+        p {
+            color: rgb(46, 46, 46);
+        }
     }
 
     footer {
