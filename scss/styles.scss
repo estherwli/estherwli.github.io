@@ -1124,17 +1124,20 @@ and (max-device-width : 812px) {
     }
 
     .project-image {
+        filter: blur(2px);
         position: relative;
         right: 20px;
-        width: 60px;
+        width: 70px;
         height: auto;
         opacity: 0.2;
     }
 
     .project-image-right {
+        filter: blur(2px);
         position: relative;
-        right: 330px;
-        width: 60px;
+        right: 310px;
+        down: 2px;
+        width: 70px;
         height: auto;
         opacity: 0.2;
     }
