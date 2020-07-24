@@ -964,7 +964,7 @@ and (max-device-width : 1024px)  {
 
     #lead {
         height: 100%;
-        min-height: auto;
+        min-height: 100%;
         max-height: auto;
         padding: 80px 15px;
     }
@@ -1024,7 +1024,7 @@ and (max-device-width : 812px) {
     }
 
     #menu {
-        height: 30%;
+        height: 35%;
         overflow-y: auto;
         box-shadow: none;
         border-radius: 0;
@@ -1032,7 +1032,7 @@ and (max-device-width : 812px) {
 
         li {
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
     }
 
@@ -1134,6 +1134,9 @@ and (max-device-width : 736px) {
         .anim-typewriter {
             animation: none !important;
         }
+    }
+    .about-me {
+        display:none;
     }
     .profile-pic {
         display: none;
