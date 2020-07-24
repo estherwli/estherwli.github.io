@@ -985,15 +985,14 @@ and (max-device-width : 1024px)  {
 
     #lead {
         height: 100vh;
-        min-height: 500px;
-        max-height: 1080px;
         padding: 80px 15px;
         background-size: 100% auto;
-        display: flex;
-        align-content: center;
+        display: block;
+        text-align: center;
     }
 
     #lead-content {
+        display: inline-block;
         animation-play-state: paused;
         position: relative;
         transform: none;
@@ -1071,7 +1070,8 @@ and (max-device-width : 812px) {
     }
 
     #lead {
-        background-size: 100% auto;
+        height: 100vh;
+        background-position: center center !important;
         background-repeat: no-repeat !important;
     }
 
@@ -1156,9 +1156,10 @@ and (max-device-width : 812px) {
 }
 
 // Extra Small Devices
+
 @media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) {
+and (min-device-width : 375px) 
+and (max-device-width : 667px){
 
     #lead-content {
         animation-play-state: paused;
