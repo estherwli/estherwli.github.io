@@ -1124,29 +1124,24 @@ and (max-device-width : 775px) {
     }
 
     .project-image {
-        filter: blur(2px);
-        position: relative;
-        right: 20px;
-        width: 90px;
-        height: auto;
-        opacity: 0.3;
+        width:100%;
+        height:100%;
+        object-fit: contain;
+        overflow: hidden;
     }
 
     .project-image-right {
-        filter: blur(2px);
-        position: relative;
-        right: 290px;
-        width: 100px;
-        height: auto;
-        opacity: 0.3;
+        width:100%;
+        height:100%;
+        object-fit: contain;
+        overflow: hidden;
     }
 
     .project-info-trader {
         position: relative;
-        right: 30px;
-        margin: 0;
-        padding: 30px 15px;
-        top: auto;
+        margin: 10px;
+        padding: 30px 10px;
+        top: 20px;
         transform: none;
         p {
             color: rgb(46, 46, 46);
@@ -1155,10 +1150,9 @@ and (max-device-width : 775px) {
 
     .project-info-parallax {
         position: relative;
-        left: 30px;
         margin: 0;
         padding: 30px 15px;
-        top: auto;
+        top: 20px;
         transform: none;
         p {
             color: rgb(46, 46, 46);
@@ -1167,10 +1161,9 @@ and (max-device-width : 775px) {
 
     .project-info-cubesat {
         position: relative;
-        right: 30px;
         margin: 0;
         padding: 30px 15px;
-        top: auto;
+        top: 20px;
         transform: none;
         p {
             color: rgb(46, 46, 46);
