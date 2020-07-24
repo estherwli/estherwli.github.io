@@ -986,13 +986,13 @@ and (max-device-width : 1024px)  {
     #lead {
         height: 100vh;
         padding: 80px 15px;
-        background-size: 100% auto;
+        background-size: cover;
         display: block;
         text-align: center;
     }
 
     #lead-content {
-        display: inline-block;
+        padding: 50px;
         animation-play-state: paused;
         position: relative;
         transform: none;
@@ -1070,9 +1070,9 @@ and (max-device-width : 812px) {
     }
 
     #lead {
-        height: 100vh;
-        background-position: center center !important;
-        background-repeat: no-repeat !important;
+        max-width: 100%;
+        height: auto;
+        background-size: cover;
     }
 
     #lead-content {
